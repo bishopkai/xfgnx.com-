@@ -1,0 +1,320 @@
+/* First CSS from Sctact with no copy and paste */
+
+/* Body Style */
+body {
+  text-align: center;
+    color: silver;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: "Audiowide", sans-serif;
+}
+
+/* Scroll Bar */
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px ghostwhite; 
+  background: black; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(0, 174, 255) ; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: ghostwhite; 
+}
+
+
+/* login-box */
+
+.form-inline {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  border: 1px silver;
+  border-top-style: none;
+  border-right-style: none;
+  border-bottom-style: solid;
+  border-left-style: none;
+  
+}
+
+  /* Add some margins for each label - may not be needed */
+  .form-inline label {
+      margin: 5px 10px 5px 0;
+      
+  }
+
+  /* Style the input fields */
+  .form-inline input {
+      vertical-align: middle;
+      margin: 5px 10px 5px 0;
+      padding: 10px;
+      background-color: rgb(168, 164, 164);
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      
+  }
+
+  /* Style the submit button */
+  .form-inline button {
+    
+      padding: 10px 20px;
+      background-color: rgb(0, 174, 255);
+      border: 1px solid #ddd;
+      color: white;
+      border-radius: 10px;
+  }
+
+      .form-inline button:hover {
+          background-color: dodgerblue;
+      }
+
+
+/* Add responsiveness - display the form controls vertically instead of horizontally on screens that are less than 800px wide */
+@media (max-width: 800px) {
+  .form-inline input {
+      margin: 10px 0;
+  }
+
+  .form-inline {
+      flex-direction: column;
+      align-items: stretch;
+      
+  }
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  right: 0;
+  position: fixed;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 20px;
+  right: 14in;
+  padding: 0px;
+  float: none;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.reglog {
+  padding: 10px 100px;
+  right: 0;
+  position: absolute;
+}
+/* Navigation Style */
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(0, 0, 0); 
+}
+
+.flex-container > div {
+  background-color: #ffffff;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+nav {
+  align-content: center;
+  margin-inline: auto;
+  width: auto;
+  align-items: center
+  
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(0, 174, 255);
+  }
+
+nav ul li {
+    float: left;
+    border: 0px solid silver;
+}
+
+  nav ul li a {
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14px 18px;
+    text-decoration: aliceblue;
+  }
+
+  /* Change color of link on hover */
+
+  nav ul li a:hover {
+    background-color: rgb(53, 53, 54);
+  }
+
+  /* Active Link Color */
+
+  .active {
+    background-color: rgb(53, 53, 54);
+  }
+
+
+  /* Main Content */
+
+  /* Container for flexboxes */
+.row {
+  display: -webkit-flex;
+  display: flex;
+  align-content: center;
+  margin-inline: auto;
+  width: 1015px;
+  align-items: center
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 1px;
+  height: 340px; /* Should be removed. Only for demonstration */
+}
+
+/* Column TopLeft */
+.flex-box1 {
+  display: flex;
+  background-color: #fff;
+  width: 500px;
+}
+
+.flex-box1 > div {
+  background-color: DodgerBlue;
+  color: white;
+  width: 100px;
+  margin: 0px;
+  text-align: center;
+  line-height: 15px;
+  font-size: 10px;
+  border-radius: 3px;
+}
+
+/* Column TopRight */
+.flex-box2 {
+  display: flex;
+  background-color: #fff;
+  width: 500px;
+}
+
+.flex-box2 > div {
+  background-color: DodgerBlue;
+  color: white;
+  width: 100px;
+  margin: 0px;
+  text-align: center;
+  line-height: 15px;
+  font-size: 10px;
+  border-radius: 3px;
+}
+
+
+/* Column MidLeft */
+
+/* Column MidCenter */
+
+/* Column MidRight */
+
+/* Column BottomLeft */
+
+/* Column BottomCenter */
+
+/* Column BottomRight */
+  
+  /* Footer */
+
+  .footer {
+    font-size: smaller;
+    position: fixed;
+    padding-top: 5px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 5px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(53, 53, 54);
+    color: white;
+    text-align: center;
+  }
+
+/* unvisited link */
+a:link {
+  color: ghostwhite;
+}
+
+/* visited link */
+a:visited {
+  color: snow;
+}
+
+/* mouse over link */
+a:hover {
+  color: dodgerblue;
+}
+
+/* selected link */
+a:active {
+  color: rgb(0, 174, 255);
+}
