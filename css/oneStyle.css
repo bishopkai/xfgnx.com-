@@ -12,6 +12,8 @@ body {
 /* Code For Custom Scrollbar Starts Here */
 /* For firefox */
 .scroller {
+  width: 800px;
+  height: 732px;
   overflow-y: scroll;
   /*Thumb color and background color for firefox */
   scrollbar-color: #00c6ff #242942;
