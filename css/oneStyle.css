@@ -14,8 +14,8 @@ body {
 .sub-div {
   overflow-y: scroll;
   /*Thumb color and background color for firefox */
-  scrollbar-color: #00c6ff #242942; !important;
-  scrollbar-width: thin; !important;
+  scrollbar-color: #00c6ff #242942;
+  scrollbar-width: thin;
   overflow-x: none;
 }
 /*  ::-webkit- is for chrome */
