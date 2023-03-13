@@ -15,6 +15,7 @@ body {
   max-height: 100vh;
   overflow-y: scroll;
   /*Thumb color and background color for firefox */
+  scrollbar-color: rebeccapurple green;
   scrollbar-color: #00c6ff #242942;
   overflow-x: none;
 }
