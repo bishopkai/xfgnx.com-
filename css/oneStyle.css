@@ -12,15 +12,15 @@ body {
 /* Code For Custom Scrollbar Starts Here */
 /* For firefox */
 .sub-div {
-  max-height: 100vh;
   overflow-y: scroll;
   /*Thumb color and background color for firefox */
-  scrollbar-color: #00c6ff #242942;
+  scrollbar-color: #00c6ff #242942; !important;
+  scrollbar-width: thin; !important;
   overflow-x: none;
 }
 /*  ::-webkit- is for chrome */
 ::-webkit-scrollbar {
-  width: 0.2em;
+  width: 5px;
   overflow-x: none;
 }
 ::-webkit-scrollbar-track {
