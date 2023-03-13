@@ -10,6 +10,14 @@ body {
 
 /* Scroll Bar */
 .scroll_container {
+  background-color:#000000;
+  width:421px;
+  height:420px;
+  color:#0077FF;
+  border:2px solid #111999;
+  border-radius:10px;
+  overflow:hidden;
+  text-align:justify;
   scrollbar-color: rgb(10,10,60) rgb(49,54,99) !important;
   scrollbar-width: thin !important;
 }
