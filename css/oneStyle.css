@@ -9,7 +9,10 @@ body {
 }
 
 /* Scroll Bar */
-
+.scroll_container {
+  scrollbar-color: rgb(10,10,60) rgb(49,54,99) !important;
+  scrollbar-width: thin !important;
+}
 /* width */
 ::-webkit-scrollbar {
   width: 10px;
