@@ -31,7 +31,7 @@ body {
   width: auto;
   height: 1000px;
   overflow-y: scroll;
-  scrollbar-color: #00c6ff #0072ff;
+  scrollbar-color: #00c6ff #242942;
   scrollbar-width: thin;
 }
 /* scroll bar ends */
