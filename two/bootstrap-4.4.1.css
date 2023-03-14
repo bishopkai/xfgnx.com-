@@ -33,13 +33,6 @@
   --breakpoint-xl: 1200px;
   --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-  width: 800px;
-  height: 732px;
-  overflow-y: scroll;
-  /*Thumb color and background color for firefox */
-  scrollbar-color: #00c6ff #242942;
-  scrollbar-width: thin;
-  overflow-x: none;
 }
 
 *,
@@ -554,6 +547,11 @@ pre code {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  overflow-y: scroll;
+  /*Thumb color and background color for firefox */
+  scrollbar-color: #00c6ff #242942;
+  scrollbar-width: thin;
+  overflow-x: none;
 }
 
 @media (min-width: 576px) {
