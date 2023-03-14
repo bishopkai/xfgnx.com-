@@ -8,20 +8,8 @@ body {
     font-family: "Audiowide", sans-serif;
 }
 
-/* Scroll Bar */
-/* Code For Custom Scrollbar Starts Here */
-/* For firefox 
-.scroller {
-  width: 800px;
-  height: 732px;
-  overflow-y: scroll;
-  /*Thumb color and background color for firefox 
-  scrollbar-color: #00c6ff #242942;
-  scrollbar-width: thin;
-  overflow-x: none;
-} */
 
-/*  ::-webkit- is for chrome 
+/*  ::-webkit- is for chrome */ 
 ::-webkit-scrollbar {
   width: 10px;
   overflow-x: none;
@@ -36,14 +24,14 @@ body {
   background: linear-gradient(to right, #00c6ff, #0072ff);
   border-radius: 0.0em;
 }
- scroll bar ends */
+ /* scroll bar ends */
 
 /* scrolling */
 .scroller {
   width: auto;
   height: 1000px;
   overflow-y: scroll;
-  scrollbar-color: rebeccapurple green;
+  scrollbar-color: #00c6ff #0072ff;
   scrollbar-width: thin;
 }
 /* scroll bar ends */
