@@ -20,8 +20,87 @@
     </head>
 <body>
 
+<<<<<<< HEAD
+
+<!-- Log in buttons -->
+<div class="login-bar">
+  <div class="logo">
+    <a href="/home/">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="dodgerblue" style="width: 40px; height: 40px; margin-right: 10px;">
+        <circle cx="12" cy="12" r="12" fill="dodgerblue" />
+        <circle cx="12" cy="12" r="11" fill="#000" />
+        <circle cx="12" cy="12" r="9" fill="dodgerblue" />
+        <circle cx="12" cy="12" r="7" fill="blue" />
+        <text x="50%" y="50%" text-anchor="middle" dy=".35em" fill="ghostwhite" font-family="Poppins, sans-serif" font-size="7px">XFG</text>
+      </svg>
+    </a>
+  </div>
+
+  <!--Links for Login Bar-->
+  <div class="links">
+      <a href="#" class="login-link" style="color: dodgerblue;">Login</a>
+      <a href="#" style="color: #ffcc00;">Join XFGN</a>
+    </div>
+  <div class="help-button">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#fff">
+      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+    </svg>
+  </div>
+</div>
+
+<!--LoginBox-->
+<div class="login-box">
+    <form class="form-inline" action="{% url 'login' %}" method="post">
+    {% csrf_token %}
+    <input type="text" placeholder="Username" id="username" name="username">
+    <input type="password" placeholder="Password" id="password" name="password">
+    <button type="submit">Login</button>
+  </form>
+</div>
+
+
+<!--UserBanner-->
+<div class="user-banner {% if user_is_authenticated %}open{% endif %}">
+  {% if user_is_authenticated %}
+  <div class="user-details">
+    <div class="user-avatar">
+      <div class="relative overflow-hidden rounded-square">
+        <svg class="absolute w-12 h-12 text-gray-400 -left-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path>
+        </svg>
+      </div>
+    </div>
+    <div class="user-info">
+      <div class="display-name">{{ user.username }}</div>
+      <div class="xfg-rank">Rank: (placeholder)</div>
+      <div class="preferences"><a href="#" class="usercp">Preferences</a></div>
+    </div>
+  </div>
+  
+  <div class="user-teams">
+    <div class="region-flags">
+        <span class="region-flag">U.S. | <img src="{% static 'website_app/img/us_icon.png' %}" alt="USA Flag"></span>
+    </div>
+    </div>
+    <div class="row">
+      <span class="my-teams">My Teams:</span>
+    </div>
+    <div class="row">
+      <span class="user-team"></span>
+      <span class="user-team"></span>
+      <span class="user-team"></span>
+      <span class="user-team"></span>
+      <span class="user-team"></span>
+    </div>
+  </div>
+  {% endif %}
+</div>
+
+<!--User Banner & Logo Space-->
+=======
   <!-- Log in buttons -->
 
+>>>>>>> f1dcc70071de0902affc909c9cb3b2758a2916c2
 <br>
 <br>
 <header><img src="xfgLogo.gif" alt="Extreme Fusion Gaming Network" style="width:25%;height:25%;"></header>
