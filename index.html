@@ -65,6 +65,41 @@
 
 
 <!--User Banner & Logo Space-->
+
+<div class="user-banner">
+    <div class="user-details">
+        <div class="user-avatar">
+            <div class="relative overflow-hidden rounded-square">
+                <svg class="absolute w-12 h-12 text-gray-400 -left-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path>
+                </svg>
+            </div>
+        </div>
+        <div class="user-info">
+            <div class="display-name">{{ user.username }}</div>
+            <div class="xfg-rank">Rank: (placeholder)</div>
+            <div class="preferences"><a href="#" class="usercp">Preferences</a></div>
+        </div>
+    </div>
+
+    <div class="user-teams">
+        <div class="region-flags">
+            <span class="region-flag">U.S. | <img src="{% static 'website_app/img/us_icon.png' %}" alt="USA Flag"></span>
+        </div>
+        <div class="row">
+            <span class="my-teams">My Teams:</span>
+        </div>
+        <div class="row">
+            <span class="user-team"></span>
+            <span class="user-team"></span>
+            <span class="user-team"></span>
+            <span class="user-team"></span>
+            <span class="user-team"></span>
+        </div>
+    </div>
+</div>
+
+
 <br>
 <br>
 <header><img src="xfgLogo.gif" alt="Faith Gaming Network" style="width:25%;height:25%;"></header>
