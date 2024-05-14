@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
     loginForm.addEventListener('submit', function (event) {
       event.preventDefault();
       // Get user credentials
-      const email = document.getElementById('username').value;
+      const email = document.getElementById('username').value; // Updated ID to "username"
       const password = document.getElementById('password').value;
 
       // Sign in user with email and password using Firebase Authentication
@@ -39,6 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
 
 // Your script content will go here
 //document.addEventListener('DOMContentLoaded', function () {
