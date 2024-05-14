@@ -49,27 +49,16 @@
     </svg>
   </div>
 </div>
-
+    
 <!--LoginBox-->
 <div class="login-box">
-    <form id="login-form" class="form-inline" action="{% url 'login' %}" method="post">
+    <form class="form-inline" action="{% url 'login' %}" method="post">
     <!--{% csrf_token %}-->
-    <input type="text" placeholder="Username" id="username" name="username"> <!-- Updated ID to "username" -->
+    <input type="text" placeholder="Username" id="username" name="username">
     <input type="password" placeholder="Password" id="password" name="password">
     <button type="submit">Login</button>
   </form>
 </div>
-
-    
-<!--LoginBox OLD
-<div class="login-box">
-    <form class="form-inline" action="{% url 'login' %}" method="post"> -->
-    <!--{% csrf_token %}-->
-    <!-- <input type="text" placeholder="Username" id="username" name="username">
-    <input type="password" placeholder="Password" id="password" name="password">
-    <button type="submit">Login</button>
-  </form>
-</div> -->
 
 
 <!--User Banner & Logo Space-->
@@ -149,6 +138,7 @@
   const firebaseConfig = {
     apiKey: "AIzaSyD97v0JOhU8Vfdaz4EoxA-OMTErUPS9w2k",
     authDomain: "project-seven-c31f2.firebaseapp.com",
+    databaseURL: "https://project-seven-c31f2-default-rtdb.firebaseio.com",
     projectId: "project-seven-c31f2",
     storageBucket: "project-seven-c31f2.appspot.com",
     messagingSenderId: "257034431192",
