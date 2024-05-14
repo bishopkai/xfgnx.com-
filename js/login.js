@@ -2,19 +2,20 @@
 document.addEventListener('DOMContentLoaded', function () {
     const loginLink = document.querySelector('.login-link');
     const loginBox = document.querySelector('.login-box');
-  
+    const userBanner = document.querySelector('.user-banner');
+
     loginLink.addEventListener('click', function (event) {
       event.preventDefault();
       toggleLoginBox();
     });
-  
+
     function toggleLoginBox() {
       loginBox.classList.toggle('open');
     }
-  
+
     // Handle the form submission
     const loginForm = document.getElementById('login-form');
-  
+
     loginForm.addEventListener('submit', function (event) {
       event.preventDefault();
       // Get user credentials
@@ -27,7 +28,12 @@ document.addEventListener('DOMContentLoaded', function () {
           // User successfully signed in
           const user = userCredential.user;
           console.log('User signed in:', user);
-          // Redirect to another page or display success message
+          // Hide login box
+          loginBox.classList.remove('open');
+          // Show user banner/mini dashboard
+          userBanner.classList.add('open');
+          // Update user details in the banner if needed
+          // e.g., userBanner.querySelector('.display-name').innerText = user.displayName;
         })
         .catch((error) => {
           // Handle errors
