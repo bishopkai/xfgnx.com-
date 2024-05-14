@@ -52,13 +52,24 @@
 
 <!--LoginBox-->
 <div class="login-box">
-    <form class="form-inline" action="{% url 'login' %}" method="post">
+    <form id="login-form" class="form-inline" action="{% url 'login' %}" method="post">
     <!--{% csrf_token %}-->
-    <input type="text" placeholder="Username" id="username" name="username">
+    <input type="text" placeholder="Username" id="username" name="username"> <!-- Updated ID to "username" -->
     <input type="password" placeholder="Password" id="password" name="password">
     <button type="submit">Login</button>
   </form>
 </div>
+
+    
+<!--LoginBox OLD
+<div class="login-box">
+    <form class="form-inline" action="{% url 'login' %}" method="post"> -->
+    <!--{% csrf_token %}-->
+    <!-- <input type="text" placeholder="Username" id="username" name="username">
+    <input type="password" placeholder="Password" id="password" name="password">
+    <button type="submit">Login</button>
+  </form>
+</div> -->
 
 
 <!--User Banner & Logo Space-->
