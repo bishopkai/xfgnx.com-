@@ -167,8 +167,10 @@ body {
 			{
 				display: flex;
 				justify-content: center;
-				background-color: rgb(0, 0, 0);
-				background:black url(img/blockdefault.gif) center center repeat-x;
+				background: rgb(0,0,0);
+				background: linear-gradient(0deg, rgba(0,0,0,1) 49%, rgba(92,92,92,1) 51%);
+/* 				background-color: rgb(0, 0, 0);
+				background:black url(img/blockdefault.gif) center center repeat-x; */
 			}
 			
 			.flex-container > div 
