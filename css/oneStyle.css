@@ -291,6 +291,100 @@ body {
 
 /* Column MidRight */
 
+
+/* General Mid-Box Styling */
+.mid-box {
+    background-color: #111;
+    color: #fff;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+.mid-box h3 {
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #00bcd4;
+    padding-bottom: 5px;
+}
+
+/* Getting Started */
+.getting-started-content p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+.info-links {
+    list-style-type: none;
+    padding: 0;
+}
+.info-links li {
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    color: #00bcd4;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+.info-links li:hover {
+    color: #0097a7;
+}
+.more-link {
+    color: #00bcd4;
+    text-decoration: none;
+    font-weight: bold;
+}
+.more-link:hover {
+    text-decoration: underline;
+}
+
+/* Latest Forum Posts */
+.recent-posts {
+    list-style-type: none;
+    padding: 0;
+}
+.recent-posts li {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 5px;
+}
+.recent-posts a {
+    color: #00bcd4;
+    text-decoration: none;
+    font-weight: bold;
+}
+.recent-posts a:hover {
+    text-decoration: underline;
+}
+.recent-posts span {
+    display: block;
+    font-size: 0.9rem;
+    color: #888;
+}
+
+/* Recent Matches Table */
+.tech-table {
+    width: 100%;
+    border-collapse: collapse;
+    color: #ddd;
+}
+.tech-table th, .tech-table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #333;
+}
+.tech-table th {
+    background-color: #00bcd4;
+    color: #000;
+}
+.tech-table .win { color: #4caf50; }
+.tech-table .loss { color: #f44336; }
+.tech-table img {
+    vertical-align: middle;
+}
+
+
+
 /* Column BottomLeft */
 
 /* Column BottomCenter */
