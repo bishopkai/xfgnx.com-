@@ -135,22 +135,65 @@
 
  <!--Mid Row-->
 <div class="row">
-    <!--Mid Left Box-->
-  <div class="column" style="background-color:rgb(255, 255, 255); color: ghostwhite;">
-    <iframe src="info_box_one.html" width="400px" height="299px" style="border:none;">
-    </iframe>
-  </div>
+    <!--Left Box: Getting Started -->
+    <div class="column mid-box" id="getting-started">
+      <h3>Getting Started</h3>
+      <div class="getting-started-content">
+        <p><strong>New to XFGNX?</strong></p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam justo. Ut porta. Nullam ultrices velit sit amet mi. Donec gravida.</p>
+        <ul class="info-links">
+          <li>What is XFGNX?</li>
+          <li>How do the ladders work?</li>
+          <li>How do I join a team?</li>
+          <li>How do I become a free agent?</li>
+        </ul>
+        <a href="#" class="more-link">Learn More</a>
+      </div>
+    </div>
   
-    <!--Mid Center Box-->
-  <div class="column" style="background-color:rgb(255, 255, 255); color: ghostwhite;">
-  <img src="img/recents.jpg" width="100%" height="80.5%">
-  </div>
+    <!--Center Box: Latest Forum Posts -->
+    <div class="column mid-box" id="latest-posts">
+      <h3>Latest Forum Posts</h3>
+      <ul class="recent-posts">
+        <li><a href="#">New template is now revamped!</a> <span>Replies: 2 | Views: 9</span></li>
+        <li><a href="#">Tournament updates live</a> <span>Replies: 3 | Views: 7</span></li>
+        <li><a href="#">Looking for a Halo 3 squad</a> <span>Replies: 5 | Views: 14</span></li>
+        <li><a href="#">Clan recruitment open now</a> <span>Replies: 4 | Views: 11</span></li>
+      </ul>
+    </div>
   
-    <!--Mid Right Box-->
-  <div class="column" style="background-color:rgb(255, 255, 255); color: ghostwhite;">
-<img src="img/forums.jpg" width="100%" height="80.5%">
-  </div>
+    <!--Right Box: Recent Matches -->
+    <div class="column mid-box" id="recent-matches">
+      <h3>Recent Matches</h3>
+      <table class="tech-table">
+        <thead>
+          <tr>
+            <th>Console</th>
+            <th>Match Info</th>
+            <th>Results</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><img src="{% static 'img/xbox.png' %}" alt="Xbox" width="20"></td>
+            <td>xZachKoolX vs S510CarlosX</td>
+            <td class="win">100 - 30</td>
+          </tr>
+          <tr>
+            <td><img src="{% static 'img/ps.png' %}" alt="PS" width="20"></td>
+            <td>LegendPro vs NoobSlayer</td>
+            <td class="loss">45 - 100</td>
+          </tr>
+          <tr>
+            <td><img src="{% static 'img/xbox.png' %}" alt="Xbox" width="20"></td>
+            <td>EliteTeam vs RogueSquad</td>
+            <td class="win">85 - 20</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
 </div>
+
 
  <!--Bottom Row-->
 <div class="row">
