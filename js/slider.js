@@ -4,6 +4,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const leftControl = document.querySelector(".slider-control.left");
     const rightControl = document.querySelector(".slider-control.right");
     const totalSlides = slides.length;
+
+    console.log(document.querySelector(".slider"));
+    console.log(document.querySelectorAll(".slide"));
+
   
     let currentIndex = 0;
   
