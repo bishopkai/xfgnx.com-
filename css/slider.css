@@ -1,0 +1,131 @@
+/* Global Box Sizing */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    font-family: 'Polar', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* Slider Container */
+.slider-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: auto;
+    user-select: none;
+}
+
+/* Slider Navigation Controls */
+.slider-control {
+    position: absolute;
+    top: 0;
+    width: 10%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    opacity: 0.5;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 10;
+}
+.slider-control.left {
+    left: 0;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent);
+}
+.slider-control.right {
+    right: 0;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.5), transparent);
+}
+.slider-control:hover {
+    opacity: 0.8;
+}
+
+/* Slider Wrapper */
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Individual Slide */
+.slide {
+    position: relative;
+    flex: 0 0 100%;
+    overflow: hidden;
+}
+
+/* Slide Backgrounds */
+.slide:nth-child(1) .slide__bg {
+    background-image: url('https://i.ibb.co/5rt25hD/DALL-E-2024-12-18-14-54-23-A-clean-sleek-digital-background-for-a-faith-and-gaming-themed-website-sl.webp');
+}
+.slide:nth-child(2) .slide__bg {
+    background-image: url('https://i.ibb.co/Rg2HW4W/DALL-E-2024-12-18-14-56-00-A-clean-sharp-digital-background-for-a-faith-and-gaming-themed-website-sl.webp');
+}
+.slide:nth-child(3) .slide__bg {
+    background-image: url('https://i.ibb.co/djqWjwq/DALL-E-2024-12-18-14-53-43-A-clean-and-modern-digital-background-for-a-faith-and-gaming-themed-websi.webp');
+}
+.slide:nth-child(4) .slide__bg {
+    background-image: url('https://i.ibb.co/CVG1hbT/DALL-E-2024-12-18-14-53-01-A-clean-and-modern-digital-background-designed-for-a-faith-and-gaming-the.webp');
+}
+
+/* Background Style */
+.slide__bg {
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 340px; /* Adjust height as needed */
+}
+
+/* Slide Text */
+.slide__text {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.slide__text-heading {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.slide__text-desc {
+    font-size: 1.2rem;
+    line-height: 1.4;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .slide__text-heading {
+        font-size: 2rem;
+    }
+
+    .slide__text-desc {
+        font-size: 1rem;
+    }
+
+    .slider-control {
+        width: 15%; /* Larger controls for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .slide__bg {
+        height: 250px; /* Reduce height for smaller screens */
+    }
+
+    .slide__text-heading {
+        font-size: 1.5rem;
+    }
+
+    .slide__text-desc {
+        font-size: 0.9rem;
+    }
+}
