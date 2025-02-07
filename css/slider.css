@@ -55,7 +55,7 @@ html, body {
 /* Slider Wrapper */
 .slider {
     display: flex;
-    width: 400%;
+    width: 100%;
     transition: transform 0.5s ease-in-out;
 }
 
