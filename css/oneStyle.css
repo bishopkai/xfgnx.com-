@@ -231,12 +231,17 @@ body {
 
   /* Container for flexboxes */
 .row {
-  display: -webkit-flex;
-  display: flex;
-  align-content: center;
-  margin-inline: auto;
-  width: 1015px;
-  align-items: center
+	display: -webkit-flex;
+	display: flex;
+	align-content: center;
+	margin-inline: auto;
+	width: 1015px;
+	align-items: center;
+	box-shadow: 
+		-1px 0px 5px rgba(0,0,0,0.8),
+		1px 0px 5px rgba(0,0,0,0.8);
+	border: 1px solid #222;
+	
 }
 
 /* Create three equal columns that sits next to each other */
