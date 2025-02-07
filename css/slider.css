@@ -1,4 +1,4 @@
-/* Global Reset */
+/* Global Box Sizing */
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
@@ -7,6 +7,8 @@
 
 html, body {
     font-family: 'Polar', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
     width: 100%;
     overflow-x: hidden;
 }
@@ -14,38 +16,74 @@ html, body {
 /* Slider Container */
 .slider-container {
     position: relative;
-    width: 100%;
     max-width: 100%;
-    height: 340px;
     overflow: hidden;
     margin: 0 auto;
+    padding: auto;
+    user-select: none;
+}
+
+/* Slider Navigation Controls */
+.slider-control {
+    position: absolute;
+    top: 0;
+    width: 10%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    opacity: 0.5;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out;
+    z-index: 10;
+}
+.slider-control.left {
+    left: 0;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent);
+}
+.slider-control.right {
+    right: 0;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.5), transparent);
+}
+.slider-control:hover {
+    opacity: 0.8;
 }
 
 /* Slider Wrapper */
 .slider {
     display: flex;
-    width: 300%;
     transition: transform 0.5s ease-in-out;
 }
 
 /* Individual Slide */
 .slide {
-    flex: 0 0 100%;
-    width: 100%;
-    height: 340px;
     position: relative;
+    flex: 0 0 100%;
+    overflow: hidden;
 }
 
-/* Slide Background */
+/* Slide Backgrounds */
+.slide:nth-child(1) .slide__bg {
+    background-image: url('https://i.ibb.co/5rt25hD/DALL-E-2024-12-18-14-54-23-A-clean-sleek-digital-background-for-a-faith-and-gaming-themed-website-sl.webp');
+}
+.slide:nth-child(2) .slide__bg {
+    background-image: url('https://i.ibb.co/Rg2HW4W/DALL-E-2024-12-18-14-56-00-A-clean-sharp-digital-background-for-a-faith-and-gaming-themed-website-sl.webp');
+}
+.slide:nth-child(3) .slide__bg {
+    background-image: url('https://i.ibb.co/djqWjwq/DALL-E-2024-12-18-14-53-43-A-clean-and-modern-digital-background-for-a-faith-and-gaming-themed-websi.webp');
+}
+.slide:nth-child(4) .slide__bg {
+    background-image: url('https://i.ibb.co/CVG1hbT/DALL-E-2024-12-18-14-53-01-A-clean-and-modern-digital-background-designed-for-a-faith-and-gaming-the.webp');
+}
+
+/* Background Style */
 .slide__bg {
-    width: 100%;
-    height: 340px;
-    background-size: cover;
     background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 340px; /* Adjust height as needed */
 }
 
 /* Slide Text */
-.slide__content {
+.slide__text {
     position: absolute;
     bottom: 10%;
     left: 10%;
@@ -55,36 +93,39 @@ html, body {
 
 .slide__text-heading {
     font-size: 2.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .slide__text-desc {
     font-size: 1.2rem;
+    line-height: 1.4;
 }
 
-/* Slider Controls */
-.slider-control {
-    position: absolute;
-    top: 50%;
-    width: 50px;
-    height: 50px;
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    font-size: 24px;
-    text-align: center;
-    line-height: 50px;
-    cursor: pointer;
-    z-index: 10;
-    transform: translateY(-50%);
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .slide__text-heading {
+        font-size: 2rem;
+    }
+
+    .slide__text-desc {
+        font-size: 1rem;
+    }
+
+    .slider-control {
+        width: 15%; /* Larger controls for smaller screens */
+    }
 }
 
-.slider-control.left {
-    left: 10px;
-}
+@media (max-width: 480px) {
+    .slide__bg {
+        height: 250px; /* Reduce height for smaller screens */
+    }
 
-.slider-control.right {
-    right: 10px;
-}
+    .slide__text-heading {
+        font-size: 1.5rem;
+    }
 
-.slider-control:hover {
-    background: rgba(0, 0, 0, 0.8);
+    .slide__text-desc {
+        font-size: 0.9rem;
+    }
 }
