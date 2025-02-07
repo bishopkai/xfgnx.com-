@@ -19,8 +19,11 @@ html, body {
     max-width: 100%;
     overflow: hidden;
     margin: 0 auto;
-    padding: auto;
     user-select: none;
+    display: block; /* Ensure it's always visible */
+    width: 100%;
+    height: 340px;
+    background: #000; /* Change this if needed */
 }
 
 /* Slider Navigation Controls */
