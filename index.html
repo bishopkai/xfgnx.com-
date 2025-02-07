@@ -9,6 +9,7 @@
       <link rel="stylesheet" href="css/news.css">
       <link rel="stylesheet" href="css/jquery-ui.css">
       <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/slider.css">
       <script src="/js/oneJs.js"></script>
       <script src="/js/login.js"></script>
       <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
@@ -124,12 +125,43 @@
 <div class="row">
 
   <!--Top Main Box-->
-<div class="column" style="background-color:#aaa; color: ghostwhite;">Pokemon of the Week
-
-  <iframe src="two/slider.html" width="100%" height="300px" style="border:none;">
-  </iframe>
-
-</div>
+      <div class="slider-container">
+    <div class="slider-control left inactive"></div>
+    <div class="slider-control right"></div>
+    <ul class="slider-pagi"></ul>
+    <div class="slider">
+      <div class="slide slide-0 active">
+        <div class="slide__bg"></div>
+        <div class="slide__content">
+          <div class="slide__text">
+            <h2 class="slide__text-heading">Welcome to Faith Gaming</h2>
+            <p class="slide__text-desc">Your gaming community awaits you!</p>
+            <a class="slide__text-link">Explore Now</a>
+          </div>
+        </div>
+      </div>
+      <div class="slide slide-1">
+        <div class="slide__bg"></div>
+        <div class="slide__content">
+          <div class="slide__text">
+            <h2 class="slide__text-heading">Play and Compete</h2>
+            <p class="slide__text-desc">Join tournaments and climb the leaderboard.</p>
+            <a class="slide__text-link">Join Tournaments</a>
+          </div>
+        </div>
+      </div>
+      <div class="slide slide-2">
+        <div class="slide__bg"></div>
+        <div class="slide__content">
+          <div class="slide__text">
+            <h2 class="slide__text-heading">Connect with Members</h2>
+            <p class="slide__text-desc">Build friendships and grow your gaming network.</p>
+            <a class="slide__text-link">Meet the Community</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </div>
 
