@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom jQuery Tabs - No Borders</title>
+
+  <!-- jQuery UI Stylesheet -->
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+
+  <style>
+    /* Universal Reset for Borders, Margins, Shadows */
+    * {
+      border: 0 !important;
+      box-shadow: none !important;
+      margin: 0 !important;
+      outline: none !important;
+    }
+
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    /* Tabs Container (Remove All White Borders) */
+    .ui-tabs {
+      background-color: #000; /* Match background */
+      border: none !important; /* Remove container border */
+      padding: 10px; /* Adjust spacing if needed */
+    }
+
+    /* Tabs Navigation Styling */
+    .ui-tabs .ui-tabs-nav {
+      background-color: #000;
+      display: flex;
+      justify-content: flex-start;
+      padding: 0;
+    }
+
+    .ui-tabs .ui-tabs-nav li {
+      margin: 0;
+      padding: 0;
+      border: none !important;
+    }
+
+    .ui-tabs .ui-tabs-nav li a {
+      background-color: #0058ab;
+      color: ghostwhite;
+      padding: 8px 15px;
+      text-decoration: none;
+      font-weight: normal;
+      transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+      border: none !important;
+    }
+
+    /* Hover State */
+    .ui-tabs .ui-tabs-nav li a:hover {
+      background-color: #007bff;
+    }
+
+    /* Active Tab Styling */
+    .ui-tabs .ui-tabs-nav li.ui-tabs-active a {
+      background-color: #202020;
+      color: #ffffff;
+    }
+
+    /* Content Panel Styling */
+    .ui-tabs .ui-tabs-panel {
+      background-color: #202020;
+      color: ghostwhite;
+      padding: 15px;
+      margin-top: -5px;
+      box-shadow: none !important;
+      border: none !important;
+    }
+
+    /* Remove focus outlines */
+    a:focus,
+    button:focus {
+      outline: none !important;
+    }
+
+    /* Links in Content */
+    .ui-tabs-panel ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .ui-tabs-panel ul li {
+      margin-bottom: 5px;
+    }
+
+    .ui-tabs-panel ul li a {
+      color: #0058ab;
+      text-decoration: none;
+    }
+
+    .ui-tabs-panel ul li a:hover {
+      color: #007bff;
+    }
+  </style>
+
+  <script>
+    $(function () {
+      $("#tabs").tabs();
+    });
+  </script>
+</head>
+
+<body>
+  <div id="tabs">
+    <ul>
+      <li><a href="#tabs-1">Getting Started</a></li>
+      <li><a href="#tabs-2">Popular Arenas</a></li>
+      <li><a href="#tabs-3">Tournaments</a></li>
+    </ul>
+    <div id="tabs-1">
+      <h3>New to FPSGN?</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam justo. Ut porta.</p>
+      <ul>
+        <li><a href="#">What is FPSGN?</a></li>
+        <li><a href="#">How do the ladders work?</a></li>
+        <li><a href="#">How do I join a team?</a></li>
+        <li><a href="#">How do I become a free agent?</a></li>
+      </ul>
+    </div>
+    <div id="tabs-2">
+      <h3>Popular Arenas</h3>
+      <p>Explore the best and most exciting arenas available!</p>
+      <ul>
+        <li>Battlefield Royale</li>
+        <li>Stormfront Valley</li>
+        <li>Crimson Canyon</li>
+        <li>Shadow Fortress</li>
+      </ul>
+    </div>
+    <div id="tabs-3">
+      <h3>Upcoming Tournaments</h3>
+      <p>Don't miss these tournaments:</p>
+      <ul>
+        <li>Winter Clash 2024</li>
+        <li>Spring Championships</li>
+        <li>Summer Invitational</li>
+        <li>Autumn Finals</li>
+      </ul>
+    </div>
+  </div>
+</body>
+
+</html>
