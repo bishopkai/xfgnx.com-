@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>xFGNx</title>
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" />
+  <link rel="stylesheet" href="menuBarU.css" />
+  <link rel="stylesheet" href="slider.css" />
+  <script type="text/javascript" src="slider.js"></script>
+</head>
+<body>
+  <!-- NAVIGATION -->
+  <nav class="flex-container" id="mainNav">
+    <ul class="menu">
+      <!-- LEFT DECOR CAP -->
+      <li class="nav-decor" id="leftCap"><img src="images/top_nav/topnavleft.jpg" alt="left cap" /></li>
+
+      <!-- TOP-LEVEL ITEMS -->
+      <li id="homeTab"><a href="#home">HOME</a></li>
+      <li><a href="portal.html">My XFGNX</a></li>
+
+      <li class="has-submenu">
+        <a href="xbox.html">XBOX</a>
+        <ul class="submenu">
+          <li><a href="#">Call of Duty</a></li>
+          <li><a href="#">Gears of War</a></li>
+        </ul>
+      </li>
+
+      <li class="has-submenu">
+        <a href="playstation.html">PLAYSTATION</a>
+        <ul class="submenu">
+          <li><a href="#">Dropline one</a></li>
+          <li><a href="#">Dropline two</a></li>
+          <li class="has-flyout">
+            <a href="#">Dropline three</a>
+            <ul class="flyout">
+              <li><a href="#">Flyout one</a></li>
+              <li><a href="#">Flyout two</a></li>
+              <li><a href="#">Flyout three</a></li>
+              <li><a href="#">Flyout four</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Dropline four</a></li>
+          <li><a href="#">Dropline five</a></li>
+          <li><a href="#">Dropline six</a></li>
+        </ul>
+      </li>
+
+      <li><a href="tournaments.html">TOURNAMENTS</a></li>
+      <li><a href="#members">MEMBERS</a></li>
+      <li><a href="#forums">FORUMS</a></li>
+      <li><a href="#more">MORE</a></li>
+      <li id="supportTab"><a href="sprt.html">SUPPORT</a></li>
+
+      <!-- RIGHT DECOR CAP -->
+      <li class="nav-decor" id="rightCap"><img src="images/top_nav/topnavright.jpg" alt="right cap" /></li>
+    </ul>
+  </nav>
+  <!-- NAVIGATION -->
+
+  <!-- SLIDER SECTION -->
+  <div class="slider-test">
+    <div class="slides">
+      <div class="slide active">
+        <img src="images/slide1.png" alt="Slide 1">
+        <div class="slide-text">
+          <h3>Welcome to FGN</h3>
+          <p>Your premier gaming destination</p>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="images/slide2.png" alt="Slide 2">
+        <div class="slide-text">
+          <h3>Latest Tournaments</h3>
+          <p>Join the competition today</p>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="images/slide3.png" alt="Slide 3">
+        <div class="slide-text">
+          <h3>Gaming Community</h3>
+          <p>Connect with fellow gamers</p>
+        </div>
+      </div>
+    </div>
+    
+    <button class="slider-arrow prev">&#10094;</button>
+    <button class="slider-arrow next">&#10095;</button>
+    
+    <div class="slider-dots">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </div>
+  <!-- SLIDER SECTION -->
+
+  <p>Note: under construction</p>
+  <!-- SCRIPTS -->
+  <script> 
+    // MENU BAR / NAVIGATION
+    window.addEventListener('load', () => {
+      const Lblue = 'images/top_nav/topnavleft.jpg';
+      const Lblk = 'images/top_nav/topnavleft-black.jpg';
+      const Rblue = 'images/top_nav/topnavright.jpg';
+      const Rblk = 'images/top_nav/topnavright-black.jpg';
+      const lImg = document.querySelector('#leftCap img');
+      const rImg = document.querySelector('#rightCap img');
+      const home = document.getElementById('homeTab');
+      const sup = document.getElementById('supportTab');
+
+      home.addEventListener('mouseenter', () => lImg.src = Lblk);
+      home.addEventListener('mouseleave', () => lImg.src = Lblue);
+      sup.addEventListener('mouseenter', () => rImg.src = Rblk);
+      sup.addEventListener('mouseleave', () => rImg.src = Rblue);
+    });
+  </script>
+  <!-- SCRIPTS -->
+
+</body>
+</html>

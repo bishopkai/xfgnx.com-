@@ -1,0 +1,1138 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{margin:0px;padding:0px;font-family:'Poppins', sans-serif;}
+.clr{clear:both;}
+html{font-size:100%;height:100%;padding-bottom:1px;}
+
+.con1{
+	width:auto;
+	height:auto;
+}
+
+	.top_bar_con{
+		width:auto;
+		height:216px;
+	}
+
+	
+		input::-webkit-input-placeholder {
+			color: ghostwhite;
+		}
+
+		input:-moz-placeholder {
+			color: ghostwhite;
+		}
+
+		input::-moz-placeholder {
+			color: ghostwhite;
+		}
+
+		input:-ms-input-placeholder {
+			color: ghostwhite;
+		}
+
+		.top_login_bar_con1{
+			width:auto;
+			height:41px;
+			background-image:url(images/login_bar_bg.jpg);
+			background-repeat:repeat-x;
+			
+		}
+		
+			.top_login_bar_con2{
+				width:980px;
+				height:41px;
+				margin:0 auto;
+				
+			}
+			
+				.top_login_bar_left_con{
+					width:430px;
+					height:23px;
+					float:left;
+					margin-top:9px;
+					
+				}
+				
+					.top_login_bar_left_input{
+						width:148px;
+						height:23px;
+						background-image:url(images/top_login_bar_left_input_bg.jpg);
+						padding:0px 5px;
+						margin:0px 7px 0px 0px;
+						border:0px;
+						color: #00A7FF;
+						font-family:'Poppins', sans-serif;
+						font-size:11px;
+						font-weight:bold;
+					}
+					
+					.top_login_bar_left_signin{
+						width:67px;
+						height:23px;
+						background-image:url(images/top_login_bar_left_signin_bg.jpg);
+						border:0px;
+						margin-right:7px;
+						
+					}
+					
+					/*.top_login_bar_left_rememberme{/*As of right now can not be style by css, this line is here so when they do it is ready for it to take effect
+					}*/
+				
+				.top_login_bar_right_con{
+					width:160px;
+					height:10px;
+					margin-top:15px;
+					float:right;
+					text-align:right;
+					font-family:'Poppins', sans-serif;
+					font-size:11px;
+					color:ghostwhite;
+				}
+				
+					/* .top_login_bar_right_con span{
+					} */
+					
+						.top_login_bar_right_con span a{
+							font-family:'Poppins', sans-serif;
+							font-size:11px;
+							color:#7F7F7F;
+							text-decoration:none;
+						}
+						
+						.top_login_bar_right_con span a:hover{
+							text-decoration:underline;
+						}
+						
+		.top_logo_bar_con1{
+			width:auto;
+			height:147px;
+			background-image:url(images/logo_bar_bg.jpg);
+			background-repeat:repeat-x;
+		}
+		
+			.top_logo_bar_con2{
+				width:900px;
+				height:147px;
+				margin:0 auto;
+			}
+			
+				.top_logo_bar_left_con{
+					width:334px;
+					height:111px;
+					float:left;
+					margin-top:14px;
+				}
+				
+					.top_logo_bar_left_con img{
+						border:0px;
+					}
+					
+				.top_logo_bar_right_con{
+					width:488px;
+					height:79px;
+					float:right;
+					margin-top:33px;
+					padding:1px;
+					border:1px solid #afafaf;
+				}
+				
+					.top_logo_bar_right_con img{
+						border:0px;
+					}
+					
+		.top_menu_con1{
+			width:auto;
+			height:28px;
+			background-image:url(images/top_menu_bg.jpg);
+			background-repeat:repeat-x;
+		}
+		
+			.top_menu_con2{
+				width:1001px;
+				height:28px;
+				margin:0 auto;
+			}
+			
+		.main_body_con1{
+			width:1025px;
+			height:auto;
+			background-image:url(images/main_body_con1_bg.jpg);
+			background-repeat:repeat-y;
+			margin:0 auto;
+			padding-bottom: 20px; /* add spacing between content and footer */
+		}
+		
+			.main_body_con2{
+				width:985px;
+				height:auto;
+				margin:0px 0px 0px 20px;
+				padding:9px 0px 15px 0px;
+				margin-bottom: 10px; /* adjust value as needed */
+			}
+			
+				.featured_news_con{
+					width:555px;
+					height:253px;
+					float:left;
+					margin-left:2px;
+				}
+				
+				.top_tab1_tabs_con1{
+					width:415px;
+					min-height:254px;
+					height:auto;
+					margin-left:10px;
+					float:right;
+					border-left:1px solid #E2E2E2;
+					border-bottom:1px solid #E2E2E2;
+					margin-right:2px;
+				}
+				
+					.tabs_header1{
+						width:415px;
+						height:22px;
+						background-image:url(images/getting_started_header_bg.jpg);
+						font-family:'Poppins', sans-serif;
+						font-size:10px;
+						font-weight:bold;
+						color:#FFF;
+					}
+					
+						.tabs_header1 span{
+							margin-left:16px;
+							line-height:22px;
+						}
+						
+						.top_tab1_tabs_con2{
+							width:406px;
+							height:224px;
+							padding:4px;
+							border-right:1px solid #E2E2E2;
+						}
+
+
+
+						
+			.middle_top_ads_con{
+				width:980px;
+				height:81px;
+				padding:8px 0px 0px 0px;
+				margin:0 auto;
+			}
+			
+				.middle_top_ad_left{
+					width:735px;
+					height:79px;
+					float:left;
+					padding:1px;
+					border:1px solid #afafaf;
+				}
+				
+					.middle_top_ad_left img{
+						border:0px;
+					}
+				
+				.verse-box {
+					width: 226px;
+					height: 78px;
+					float: right;
+					padding: 1px;
+					border: 1px solid #afafaf;
+					/* box-sizing: border-box; */
+					position: relative;
+					overflow: hidden;
+				}
+
+				.verse-box img {
+					position: absolute;
+					top: 1px;
+					left: 1px;
+					right: 1px;
+					bottom: 1px;
+					width: 226px;
+					height: 78px;
+					z-index: 0;
+				}
+
+				.verse-overlay {
+					position: relative;
+					font-size: xx-small;
+					z-index: 2;
+					padding: 2px 5px 2px 5px;
+					padding: 5px;
+					color: white;
+					text-align: center;
+				}
+
+					
+			.middle_content_con{
+				width:980px;
+				height:304px;
+				padding-top:8px;
+				margin:0 auto;
+			}
+			
+				.middle_content_left{
+					width:416px;
+					height:304px;
+					float:left;
+				}
+				
+					.middle_left_tabs_con1{
+						width:415px;
+						min-height:304px;
+						height:auto;
+						margin-left:10px;
+						float:right;
+						border-left:1px solid #E2E2E2;
+						border-bottom:1px solid #E2E2E2;
+						margin-right:2px;
+					}
+
+						.tabs_header0{
+							width:553px;
+							height:22px;
+							background-image:url(images/getting_started_header_bg.jpg);
+							font-family:'Poppins', sans-serif;
+							font-size:10px;
+							font-weight:bold;
+							color:#FFF;
+							border-right:1px solid #E2E2E2;
+							border-left:1px solid #E2E2E2;
+						}
+								.tabs_header0 span{
+								margin-left:16px;
+								margin-top: 0px;
+								line-height:22px;
+							}
+					
+						.tabs_header1{
+							width:414px;
+							height:22px;
+							background-image:url(images/getting_started_header_bg.jpg);
+							font-family:'Poppins', sans-serif;
+							font-size:10px;
+							font-weight:bold;
+							color:#FFF;
+							border-right:1px solid #E2E2E2;
+						}
+						
+							.tabs_header1 span{
+								margin-left:16px;
+								line-height:22px;
+							}
+							
+							.middle_left_tabs_con2{
+								width:406px;
+								height:274px;
+								padding:4px;
+								border-right:1px solid #E2E2E2;
+							}
+				
+				.middle_content_center{
+					width:311px;
+					height:304px;
+					float:left;
+					margin-left:10px;
+				}
+				
+					.middle_center_tabs_con1{
+						width:311px;
+						min-height:304px;
+						height:auto;
+						border-bottom:1px solid #E2E2E2;
+						border-left:1px solid #E2E2E2;
+						border-right:1px solid #E2E2E2;
+						margin-right:2px;
+					}
+					
+						.tabs_header2{
+							width:311px;
+							height:22px;
+							background-image:url(images/getting_started_header_bg.jpg);
+							font-family:'Poppins', sans-serif;
+							font-size:10px;
+							font-weight:bold;
+							color:#FFF;
+							/* border-right:1px solid #E2E2E2; */
+							/* border-left:1px solid #E2E2E2; */
+						}
+						
+							.tabs_header2 span{
+								margin-left:16px;
+								line-height:22px;
+								
+							}
+							
+							.middle_center_tabs_con2{
+								width:303px;
+								height:274px;
+								padding:4px 3px;
+								/* border-right:1px solid #E2E2E2;
+								border-left:1px solid #E2E2E2; */
+							}
+
+							.promo-img-fit {
+								width: 137px;
+								height: 165px;
+								object-fit: cover;
+								display: block;
+								border: 0;
+							}
+							.summer-bash-img {
+								width: 137px;
+								height: 165px;
+								object-fit: cover;
+								display: block;
+								border: 0;
+								margin: 0;
+								padding: 0;
+							}
+
+							
+								.middle_center_promo_left{
+									width:145px;
+									height:269px;
+									padding:1px;
+									border:1px solid #E2E2E2;
+									float:left;
+								}
+								
+									.middle_center_promo_con{
+										width:137px;
+										height:261px;
+										padding:4px;
+										background-color:#EEEEEE;
+									}
+									
+										/* .middle_center_promo_img{
+										} */
+										
+											/* .middle_center_promo_img a{
+											} */
+											
+												.middle_center_promo_img a img{
+													border:0px;
+												}
+												
+										.middle_center_promo_text_con{
+											width:137px;
+											height:93px;
+											margin-top:10px;
+										}
+								
+								.middle_center_promo_right{
+									width:145px;
+									height:269px;
+									padding:1px;
+									border:1px solid #E2E2E2;
+									float:right;
+									overflow: hidden;
+								}
+								
+									.middle_center_promo_text_header{
+										font-family:'Poppins', sans-serif;
+										font-size:11px;
+										font-weight:bold;
+										color:#00A7FF;
+									}
+									
+										.middle_center_promo_text_header a{
+											color:#00A7FF;
+											text-decoration:none;
+										}
+										
+										.middle_center_promo_text_header a:hover{
+											color:#000;
+										}
+									
+									.middle_center_promo_text{
+										width:137px;
+										height:61px;
+										margin-top:5px;
+										font-family:'Poppins', sans-serif;
+										font-size:10px;
+										color:#5E5E5E;
+									}
+				
+				.middle_content_right{
+					width:227px;
+					height:305px;
+					float:right;
+					padding:0px 0px;
+					border-right:1px solid #E2E2E2;
+					border-left:1px solid #E2E2E2;
+					border-bottom: #E2E2E2 1px solid;
+					box-sizing: border-box;
+					overflow: hidden;
+
+				}
+				
+					.middle_content_right a img{
+						border:0px;
+					}
+
+					.wins {
+						color: #00FF00;
+						font-weight: bold;
+					}
+
+					.loss {
+						color: #FF3333;
+						font-weight: bold;
+					}
+
+					.top-teams-table {
+						width: 215px;
+						margin: 4px 5px 5px 5px;
+						border-collapse: collapse;
+						font-size: 10px;
+						color: #ccc;
+						background-color: #000;
+					}
+
+					.top-teams-table th,
+					.top-teams-table td {
+						padding: 4px;
+						border-bottom: 1px solid #333;
+						text-align: left;
+					}
+
+					.top-teams-table th {
+						color: #00AFFF;
+						font-weight: bold;
+						background-color: #111;
+						border-bottom: 1px solid #444;
+					}
+
+					.top-teams-table tr:hover {
+						background-color: #00A7FF;
+					}
+
+					.top-teams-table .win {
+						color: #00FF00;
+						font-weight: bold;
+					}
+
+					.top-teams-table .loss {
+						color: #FF3333;
+						font-weight: bold;
+					}
+
+					.top-teams-table img {
+						height: 12px;
+						vertical-align: middle;
+					}
+
+
+					
+			.bottom_content_con{
+				width:980px;
+				height:240px;
+				margin:7px auto 0px auto;
+			}
+			
+				.bottom_content_left{
+					width:416px;
+					height:240px;
+					float:left;
+				}
+				
+					.bottom_content_left_con1{
+						width:416px;
+						height:240px;
+						border-left:1px solid #E2E2E2;
+						border-bottom:1px solid #E2E2E2;
+					}
+					
+						.tabs_header3{
+							width:416px;
+							height:22px;
+							background-image:url(images/getting_started_header_bg.jpg);
+							font-family:'Poppins', sans-serif;
+							font-size:10px;
+							font-weight:bold;
+							color:#FFF;
+						}
+						
+							.tabs_header3 span{
+								margin-left:16px;
+								line-height:22px;
+							}
+						.bottom_content_left_con2{
+							width:407px;
+							height:211px;
+							padding:4px;
+							border-right:1px solid #E2E2E2;
+						}
+						
+							
+					
+				
+				.bottom_content_right{
+					width:553px;
+					height:240px;
+					float:right;
+					margin-left:9px;
+				}
+				
+					.bottom_content_right_con1{
+						width:553px;
+						height:240px;
+						border-left:1px solid #E2E2E2;
+						border-bottom:1px solid #E2E2E2;
+					}
+				
+						.tabs_header4{
+								width:553px;
+								height:22px;
+								background-image:url(images/getting_started_header_bg.jpg);
+								font-family:'Poppins', sans-serif;
+								font-size:10px;
+								font-weight:bold;
+								color:#FFF;
+							}
+							
+								.tabs_header4 span{
+									margin-left:16px;
+									line-height:22px;
+								}
+								
+							.bottom_content_right_con2{
+								width:544px;
+								height:211px;
+								padding:4px;
+								border-right:1px solid #E2E2E2;
+							}	
+							
+		.bottom_footer_bar_con{
+			width:auto;
+			height:584px;
+		}
+		
+			.footer_bar_con1{
+				width:auto;
+				height:28px;
+				background-image:url(images/footer_bar_con1_bg.jpg);
+				background-repeat:repeat-x;
+			}
+			
+				.footer_bar_con2{
+					width:985px;
+					height:28px;
+					margin:0 auto;
+					font-family:'Poppins', sans-serif;
+					font-size:9px;
+					color:#fff;
+					line-height:28px;
+				}
+				
+					.footer_copy{
+						float:left;
+					}
+				
+					.footer_copy .copy{
+						color:#00AFFF;
+					}
+					
+					.footer_copy a{
+						color:#00AFFF;
+						text-decoration:none;
+					}
+					
+					.footer_copy a:hover{
+						color:#fff;
+						text-decoration:underline;
+					}
+					
+				.footer_sitemap{
+					color:#00AFFF;
+					float:right;
+				}
+				
+				.footer_sitemap ul{
+					width:415px;
+					height:28px;
+					list-style:none;
+				}
+				
+				.footer_sitemap ul li{
+					display:inline;
+					float:left;
+					margin-left:5px;
+				}
+				
+				.footer_sitemap ul li a{
+					color:#00AFFF;
+					text-decoration:none;
+				}
+				
+				.footer_sitemap ul li a:hover{
+					color:#FFF;
+					text-decoration:underline;
+				}
+				
+		.bottom_footer_img_con{
+			width:960px;
+			height:556px;
+			margin:0 auto;
+		}
+
+		/* $Id: example.css,v 1.5 2006/03/27 02:44:36 pat Exp $ */
+
+/*--------------------------------------------------
+  REQUIRED to hide the non-active tab content.
+  But do not hide them in the print stylesheet!
+  --------------------------------------------------*/
+.tabberlive .tabbertabhide {
+ display:none;
+}
+
+/*--------------------------------------------------
+  .tabber = before the tabber interface is set up
+  .tabberlive = after the tabber interface is set up
+  --------------------------------------------------*/
+/* .tabber {
+}
+.tabberlive {
+} */
+
+/*--------------------------------------------------
+  ul.tabbernav = the tab navigation list
+  li.tabberactive = the active tab
+  --------------------------------------------------*/
+ul.tabbernav {
+  margin: 0;
+  padding: 0;
+  font: bold 12px Verdana, sans-serif;
+  height: 29px;
+  background: transparent;
+  display: flex;
+  gap: 3px;
+}
+
+ul.tabbernav li {
+  list-style: none;
+  margin: 0;
+  padding: 0 15px;
+  height: 29px;
+  line-height: 29px;
+  text-align: center;
+  min-width: 76px; /* Base width minus padding */
+  background: linear-gradient(to bottom, #333333 0%, #111111 100%);
+  border: 1px solid #000;
+  border-bottom: none;
+  border-radius: 3px 3px 0 0;
+}
+
+ul.tabbernav li a {
+  text-decoration: none;
+  color: #CBCBCB;
+  display: block;
+  white-space: nowrap;
+}
+
+ul.tabbernav li.tabberactive {
+  background: linear-gradient(to bottom, #0088cc 0%, #0055aa 100%);
+}
+
+ul.tabbernav li.tabberactive a {
+  color: #fff;
+}
+
+ul.tabbernav li:hover {
+  background: linear-gradient(to bottom, #444444 0%, #222222 100%);
+}
+
+ul.tabbernav li.tabberactive:hover {
+  background: linear-gradient(to bottom, #0099dd 0%, #0066bb 100%);
+}
+
+/*--------------------------------------------------
+  .tabbertab = the tab content
+  Add style only after the tabber interface is set up (.tabberlive)
+  --------------------------------------------------*/
+/* .tabberlive .tabbertab { */
+
+ /* If you don't want the tab size changing whenever a tab is changed
+    you can set a fixed height */
+
+ /* height:200px; */
+
+ /* If you set a fix height set overflow to auto and you will get a
+    scrollbar when necessary */
+
+ /* overflow:auto; */
+/* } */
+
+/* If desired, hide the heading since a heading is provided by the tab */
+.tabberlive .tabbertab h2 {
+ display:none;
+}
+.tabberlive .tabbertab h3 {
+ display:none;
+}
+
+.tabbertab div.tab_content_con1{
+	width:394px;
+	height:178px;
+	background-image:url(images/getting_startes_body_bg.jpg);
+	color:#fff;
+	padding:17px 0px 0px 12px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+}
+
+.tabbertab div.tab_content_con2{
+	width:394px;
+	height:178px;
+	color:#fff;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+}
+
+	div.tab_header_con {
+		height:22px;
+		line-height:22px;
+		width:auto;
+		padding-bottom:3px;
+	}
+	
+		div.tab_header_con span.tab_header_left{
+			float:left;
+			height:22px;
+			line-height:22px;
+			color:#00A7FF;
+			font-size:20px;
+		}
+		
+		div.tab_header_con span.tab_header_right{
+			float:left;
+			height:22px;
+			line-height:27px;
+			font-size:9px;
+			color:#595959;
+			padding-left:5px;
+		}
+	
+	.tab_content_text{
+		float:left;
+		width:auto;
+		font-size:12px;
+		color:#CBCBCB;
+		padding:0px 15px 20px 0px;
+	}
+	
+	.tab_content_list{
+		float:left;
+		font-size:12px;
+		color:#CBCBCB;
+		width:auto;
+		padding-left:30px;
+	}
+	
+		ul.tab_normal{
+			list-style:none;
+		}
+		
+			/* ul.tab_normal li{
+			} */
+			
+				ul.tab_normal li a{
+					color:#CBCBCB;
+					font-size:12px;
+					text-decoration:none;
+					font-weight:bold;
+				}
+				
+				ul.tab_normal li a:hover{
+					text-decoration:underline;
+				}
+				
+				ul.tab_type2{
+					list-style:none outside none;
+					font-family:Arial, Helvetica, sans-serif;
+					font-size:11px;
+				}
+				
+				 ul.tab_type2 li{
+					 background-image:url(images/tab_news_li_bg.jpg);
+					 background-repeat:repeat-x;
+				 }
+				 
+				 ul.tab_type2 li:hover{
+					 background-position:bottom;
+					 background-repeat:repeat-x;
+				 }
+				 
+				 ul.tab_type2 li a{
+					 display:block;
+					 height:20px;
+					 padding:4px 9px 0 8px;
+					 text-decoration:none;
+					 color:#FFF;
+				 }
+				 
+				 ul.tab_type2 li a img{
+					 display:block;
+					 float:left;
+					 margin:0 7px 0 0;
+					 /* vertical-align:middle; */
+					 border:0px;
+				 }
+				 
+				  ul.tab_type2 li a span{
+					  float:left;
+					  padding:2px 0px 0px 0px;
+				  }
+				  
+				   ul.tab_type2 li a em{
+					  color:#00AFFF;
+					  float:right;
+					  font-style:normal;
+					  font-weight:bold;
+					  padding:2px 0;
+				  }
+				  
+				  ul.tab_type2 li:hover a em{
+					  color:#FFF;
+				  }
+				  
+				  ul.tab_bottom_stats{
+					  list-style:none outside none;
+					  margin:0px;
+					  overflow:auto;
+					  height:177px;
+					  width:393px;
+					  padding:1px 1px 0px 0px;
+					  background-color:#000;
+				  }
+				  
+				  ul.tab_bottom_stats li{
+					  background-image:url(images/bottom_tab_content_bg.jpg);
+					  background-repeat:repeat-x;
+					  clear:both;
+					  color:#898989;
+					  height:51px;
+					  margin:0;
+					  padding:8px 7px 0;
+				  }
+				  
+				  ul.tab_bottom_stats li a.stats-game{
+					  color:#898989;
+					  display:block;
+					  float:left;
+					  font-weight:bold;
+					  text-decoration:none;
+				  }
+				  
+				  ul.tab_bottom_stats li a.stats-game:hover span{
+					  text-decoration:underline;
+				  }
+				  
+				  ul.tab_bottom_stats li a img{
+					  border:0px;
+					  float:left;
+					  vertical-align:text-top;
+				  }
+				  
+				  ul.tab_bottom_stats li a span{
+					  float:left;
+					  margin:3px 0 0 6px;
+				  }
+				  
+				  ul.tab_bottom_stats li p.stats-results{
+					  float:right;
+					  margin:0;
+				  }
+				  
+				  ul.tab_bottom_stats li p.stats-results a{
+					  font-family:Arial, Helvetica, sans-serif;
+					  font-size:11px;
+					  color:#898989;
+					  text-decoration:none;
+				  }
+				  
+				  ul.tab_bottom_stats li p.stats-results a:hover{
+					  text-decoration:underline;
+					  color:#00AFFF;
+				  }
+				  
+				  ul.tab_bottom_stats li p.stats-teams{
+					  clear:both;
+					  color:#CCCCCC;
+					  display:block;
+					  margin:0;
+				  }
+				  
+				  ul.tab_bottom_stats li p.stats-teams span{
+					  clear:both;
+					  float:left;
+					  line-height:1;
+					  padding:2px 9px 0 0;
+				  }
+				  
+				  
+				  ul.tab_bottom_stats li p.stats-teams span.win{
+					  background:url("images/list_big_arrow.png") no-repeat scroll 100% 4px transparent;
+				  }
+				  
+				  ul.tab_bottom_community_left{
+					  width:270px;
+					  height:177px;
+					  padding:1px 0px 1px 1px;
+					  border-right:1px solid #404040;
+					  background-color:#000;
+					  float:left;
+					  list-style:none;
+				  }
+				  
+				   ul.tab_bottom_community_left li{
+					   width:270px;
+					   height:59px;
+					   background-image:url(images/bottom_tab_content_bg.jpg);
+					   background-repeat:repeat-x;
+					   display:block;
+				   }
+				   
+				   	ul.tab_bottom_community_left li div.left_img_con{
+						width:64px;
+						height:48px;
+						margin:0px 0px 0px 6px;
+						padding-top:6px;
+						float:left;
+					}
+					
+					ul.tab_bottom_community_left li div.left_img_con a{
+						color:#00AFFF;
+					}
+					
+					ul.tab_bottom_community_left li:hover div.left_img_con a{
+						color:#FFF;
+					}
+					
+					ul.tab_bottom_community_left li div.left_img_con a img{
+						border:1px solid;
+					}
+					
+					ul.tab_bottom_community_left li div.right_details_con{
+						width:194px;
+						height:52px;
+						float:left;
+						padding-top:7px;
+						margin-left:6px;
+						font-family:Verdana, Geneva, sans-serif;
+						font-size:11px;
+						color:#CBCBCB;
+					}
+					
+					ul.tab_bottom_community_left li div.right_details_con .details_title a{
+						color:#00AFFF;
+						text-decoration:underline;
+					}
+					
+					ul.tab_bottom_community_left li:hover div.right_details_con .details_title a{
+						color:#FFF;
+					}
+					
+					ul.tab_bottom_community_left li div.right_details_con .details_author_name a{
+						color:#00AFFF;
+						text-decoration:underline;
+					}
+					
+					ul.tab_bottom_community_left li:hover div.right_details_con .details_author_name a{
+						color:#FFF;
+					}
+				  
+				  ul.tab_bottom_community_right{
+					  width:271px;
+					  height:177px;
+					  padding:1px 1px 1px 0px;
+					  background-color:#000;
+					  float:right;
+				  }
+				  
+				  ul.tab_bottom_community_right li{
+					   width:270px;
+					   height:59px;
+					   background-image:url(images/bottom_tab_content_bg.jpg);
+					   background-repeat:repeat-x;
+					   display:block;
+				   }
+				   
+				   	ul.tab_bottom_community_right li div.left_img_con{
+						width:64px;
+						height:48px;
+						margin:0px 0px 0px 6px;
+						padding-top:6px;
+						float:left;
+					}
+					
+					ul.tab_bottom_community_right li div.left_img_con a{
+						color:#00AFFF;
+					}
+					
+					ul.tab_bottom_community_right li:hover div.left_img_con a{
+						color:#FFF;
+					}
+					
+					ul.tab_bottom_community_right li div.left_img_con a img{
+						border:1px solid;
+					}
+					
+					ul.tab_bottom_community_right li div.right_details_con{
+						width:194px;
+						height:52px;
+						float:left;
+						padding-top:7px;
+						margin-left:6px;
+						font-family:Verdana, Geneva, sans-serif;
+						font-size:11px;
+						color:#CBCBCB;
+					}
+					
+					ul.tab_bottom_community_right li div.right_details_con .details_title a{
+						color:#00AFFF;
+						text-decoration:underline;
+					}
+					
+					ul.tab_bottom_community_right li:hover div.right_details_con .details_title a{
+						color:#FFF;
+					}
+					
+					ul.tab_bottom_community_right li div.right_details_con .details_author_name a{
+						color:#00AFFF;
+						text-decoration:underline;
+					}
+					
+					ul.tab_bottom_community_right li:hover div.right_details_con .details_author_name a{
+						color:#FFF;
+					}
+
+					/* Applies to all scrollable elements */
+					::-webkit-scrollbar {
+						width: 12px;
+					}
+
+					/* Scrollbar Track */
+					::-webkit-scrollbar-track {
+						background: url('images/custom_scoll_track.jpg') no-repeat center;
+						background-size: cover;
+						border-radius: 10px;
+					}
+
+					/* Scrollbar Thumb (Drag Handle) */
+					::-webkit-scrollbar-thumb {
+						background: url('images/custom_scoll_drag.png') no-repeat center;
+						background-size: contain;
+						border-radius: 10px;
+					}
+
+					/* Optional: On hover, could change or re-use same image */
+					::-webkit-scrollbar-thumb:hover {
+						background: url('images/custom_scoll_drag.png') no-repeat center;
+						background-size: contain;
+					}
+					/* Optional: On active (dragging) */

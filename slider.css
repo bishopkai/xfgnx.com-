@@ -1,0 +1,122 @@
+/* Reset and update slider styles to match site */
+.slider-container {
+    position: relative;
+    width: 553px;  /* Match site width */
+    height: 254px; /* Match site height */
+    background: #000;
+    border: 0px solid #0088cc;
+    margin-left: 2px;
+    float: left;
+}
+
+
+
+
+.slider_header span {
+    margin-left: 16px;
+    line-height: 22px;
+}
+
+/* Main slider area */
+.slider {
+    position: relative;
+    width: 100%;
+    height: calc(100% - 22px); /* Account for header */
+    overflow: hidden;
+    border-top: 0px solid #0099ff;
+    border-right:1px solid #E2E2E2;
+	border-left:1px solid #E2E2E2;
+    border-bottom:1px solid #E2E2E2;
+}
+
+/* Individual slides */
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    display: none; /* Hide inactive slides */
+}
+
+.slide.active {
+    opacity: 1;
+    display: block; /* Show active slide */
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+/* Bottom text overlay */
+.slide-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 5px 10px;
+    background: rgba(0,0,0,0.7);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Join text styling */
+.join-text {
+    color: #00a1ff;
+    font-size: 11px;
+}
+
+/* Navigation dots */
+.slide-dots {
+    display: flex;
+    gap: 2px;
+}
+
+.dot {
+    width: 5px;
+    height: 5px;
+    background: rgba(255,255,255,0.3);
+    border: 1px solid rgba(255,255,255,0.5);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot.active {
+    background: #0088cc;
+    border-color: #fff;
+}
+
+/* Navigation arrows - match site blue */
+.slider-arrow {
+    position: absolute;
+    top: calc(50% - 17px);
+    transform: translateY(-50%);
+    background: linear-gradient(to bottom,
+        rgba(0,161,255,0.4) 0%,
+        rgba(0,136,204,0.4) 50%,
+        rgba(0,107,179,0.4) 100%
+    );
+    color: #fff;
+    border: 1px solid #0088cc;
+    padding: 6px 10px;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 12px;
+    opacity: 0.7;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+
+.prev { left: 5px; }
+.next { right: 5px; }
+
+.slider-arrow:hover {
+    opacity: 1;
+    background: linear-gradient(to bottom,
+        rgba(0,161,255,0.6) 0%,
+        rgba(0,136,204,0.6) 50%,
+        rgba(0,107,179,0.6) 100%
+    );
+}

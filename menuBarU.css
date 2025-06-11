@@ -1,0 +1,178 @@
+﻿body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  background: #fff;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  background: url(images/top_menu_bg.jpg) repeat-x center;
+  margin-top: -10px; /* Move menu bar up */
+}
+
+nav.flex-container ul {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  height: 48px;
+  list-style: none;
+  overflow: visible;
+  background: url(images/top_menu_n.jpg) repeat-x center;
+}
+
+nav.flex-container ul li {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  box-sizing: border-box;
+}
+
+nav.flex-container ul li a {
+  display: block;
+  height: 100%;
+  line-height: 48px;
+  padding: 0 18px;
+  color: #fff;
+  text-decoration: none;
+  white-space: nowrap;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+}
+
+/* Keep parent menu item highlighted when submenu or flyout is open */
+nav.flex-container ul li:hover > a,
+nav.flex-container ul li:focus-within > a {
+  background: url(images/top_menu_h.jpg) repeat-x center;
+  color: #fff;
+}
+
+nav.flex-container ul li.nav-decor img {
+  display: block;
+  height: 100%;
+}
+
+/* --- DROPLINE MENU --- */
+nav.flex-container ul li ul {
+  display: none;
+  position: absolute;
+  top: 38px; /* match main menu height */
+  left: 0;
+  background: #444;
+  border: 0px solid #222;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 1000;
+  width: 180px;
+  box-sizing: border-box;
+}
+
+nav.flex-container ul li:hover > ul,
+nav.flex-container ul li:focus-within > ul {
+  display: block;
+}
+
+nav.flex-container ul li ul li {
+  border-bottom: 1px solid #1d1d1d;
+  box-sizing: border-box;
+  /* REMOVE any background here! */
+}
+
+nav.flex-container ul li ul li:last-child {
+  border-bottom: none;
+}
+
+nav.flex-container ul li ul li a {
+  display: block;
+  padding: 0 18px;
+  line-height: 25px;
+  color: #ccc;
+  background: #111;
+  font-size: 12px;
+  text-decoration: none;
+  box-sizing: border-box;
+  width: 100%;
+  outline: none;
+  border: none;
+  transition: background 0.2s, color 0.2s;
+}
+
+/* Dropdown hover/focus: blue background fills the item */
+nav.flex-container ul li ul li a:hover,
+nav.flex-container ul li ul li a:focus {
+  background: #009BFF;
+  color: #fff;
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* --- FLYOUT MENU --- */
+nav.flex-container ul li ul li ul {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 180px;
+  background: #111;
+  border: 0px solid #333;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 1001;
+  width: 180px;
+  box-sizing: border-box;
+}
+
+/* Show flyout on hover/focus */
+nav.flex-container ul li ul li:hover > ul,
+nav.flex-container ul li ul li:focus-within > ul {
+  display: block;
+}
+
+/* Highlight parent when flyout is open */
+nav.flex-container ul li ul li:hover > a,
+nav.flex-container ul li ul li:focus-within > a {
+  background: #009BFF;
+  color: #fff;
+}
+
+/* Flyout menu items */
+nav.flex-container ul li ul li ul li {
+  border-bottom: 1px solid #1d1d1d;
+  height: 25px; /* Match line height */
+}
+
+nav.flex-container ul li ul li ul li:last-child {
+  border-bottom: none;
+}
+
+/* Flyout menu links */
+nav.flex-container ul li ul li ul li a {
+  display: block;
+  padding: 0 18px;
+  height: 25px;
+  line-height: 25px;
+  color: #ccc;
+  background: #111;
+  text-decoration: none;
+  font-size: 12px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  transition: all 0.2s ease;
+}
+
+/* Flyout hover/focus state */
+nav.flex-container ul li ul li ul li a:hover,
+nav.flex-container ul li ul li ul li a:focus {
+  background: #009BFF;
+  color: #fff;
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
