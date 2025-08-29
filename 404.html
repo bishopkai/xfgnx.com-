@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 | XFGNX</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            overflow: hidden; /* Prevent scrolling caused by the animation */
+        }
+        
+        .matrix-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+            z-index: -1;
+        }
+
+        .matrix-char {
+            position: absolute;
+            font-size: 0.75rem; /* Small Type */
+            color: #0099ff; /* Blue color */
+            opacity: 0.1;
+            transition: all 0.5s;
+        }
+
+        .glitch-text {
+            animation: glitch 1s infinite;
+        }
+
+        @keyframes glitch {
+            0% { text-shadow: 0 0 0 rgba(0, 150, 255, 0.7); transform: translate(0, 0); }
+            25% { text-shadow: -2px 2px 0 rgba(0, 150, 255, 0.7); transform: translate(-2px, 2px); }
+            50% { text-shadow: 2px -2px 0 rgba(0, 150, 255, 0.7); transform: translate(2px, -2px); }
+            75% { text-shadow: -2px 2px 0 rgba(0, 150, 255, 0.7); transform: translate(-2px, 2px); }
+            100% { text-shadow: 0 0 0 rgba(0, 150, 255, 0.7); transform: translate(0, 0); }
+        }
+    </style>
+</head>
+<body class="bg-gray-950 text-gray-200 flex flex-col items-center justify-center min-h-screen p-4">
+
+    <!-- Matrix-style Animated Background -->
+    <div id="matrix-bg" class="matrix-container"></div>
+    <script>
+        const canvas = document.createElement('canvas');
+        const context = canvas.getContext('2d');
+        const container = document.getElementById('matrix-bg');
+        
+        container.appendChild(canvas);
+        
+        let width = container.offsetWidth;
+        let height = container.offsetHeight;
+        canvas.width = width;
+        canvas.height = height;
+
+        const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+=-`~?/\\';
+        const fontSize = 16;
+        const columns = width / fontSize;
+        const drops = [];
+
+        for (let x = 0; x < columns; x++) {
+            drops[x] = 1;
+        }
+
+        function draw() {
+            context.fillStyle = 'rgba(0, 0, 0, 0.05)';
+            context.fillRect(0, 0, width, height);
+
+            context.fillStyle = '#0099ff'; // Blue color
+            context.font = fontSize + 'px inter';
+
+            for (let i = 0; i < drops.length; i++) {
+                const text = characters[Math.floor(Math.random() * characters.length)];
+                context.fillText(text, i * fontSize, drops[i] * fontSize);
+
+                if (drops[i] * fontSize > height && Math.random() > 0.975) {
+                    drops[i] = 0;
+                }
+
+                drops[i]++;
+            }
+        }
+
+        function resizeCanvas() {
+            width = container.offsetWidth;
+            height = container.offsetHeight;
+            canvas.width = width;
+            canvas.height = height;
+            const columns = width / fontSize;
+            drops.length = columns;
+            for (let x = 0; x < columns; x++) {
+                if (drops[x] === undefined) {
+                    drops[x] = 1;
+                }
+            }
+        }
+        
+        window.addEventListener('resize', resizeCanvas);
+        window.onload = function() {
+            setInterval(draw, 33);
+        }
+
+    </script>
+
+    <!-- Main Content on top of the animation -->
+    <div class="relative z-10 text-center p-8 bg-gray-900 rounded-lg shadow-2xl border border-gray-800">
+        <!-- Logo and Branding -->
+        <div class="text-white text-5xl md:text-6xl lg:text-7xl font-black mb-6 tracking-wide glitch-text">
+            <span class="text-blue-500">XF</span><span class="text-white">GNX</span>
+        </div>
+
+        <!-- 404 Error Text -->
+        <h1 class="text-8xl md:text-9xl font-extrabold text-blue-600 drop-shadow-lg glitch-text">404</h1>
+        <h2 class="text-xl md:text-2xl lg:text-3xl font-bold text-gray-100 mt-4 mb-2 tracking-wide glitch-text">PAGE NOT FOUND</h2>
+        <p class="text-base md:text-lg text-gray-400 max-w-sm mx-auto mb-6">
+            The page you are looking for has been moved, removed, or is just a figment of your imagination.
+        </p>
+
+        <!-- Home Button styled like the Discord button from your site -->
+        <a href="/" class="
+            inline-block
+            px-8 py-3
+            text-lg font-bold text-white
+            bg-blue-600
+            rounded-full
+            shadow-xl
+            hover:bg-blue-700
+            transition-all duration-300
+            transform hover:scale-105
+        ">
+            GO HOME
+        </a>
+    </div>
+</body>
+</html>
