@@ -9,7 +9,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
         body {
             font-family: 'Inter', sans-serif;
-            overflow: hidden; /* Prevent scrolling caused by the animation */
+            overflow: hidden;
         }
         
         .matrix-container {
@@ -20,14 +20,6 @@
             height: 100%;
             background-color: #000;
             z-index: -1;
-        }
-
-        .matrix-char {
-            position: absolute;
-            font-size: 0.75rem; /* Small Type */
-            color: #0099ff; /* Blue color */
-            opacity: 0.1;
-            transition: all 0.5s;
         }
 
         .glitch-text {
@@ -59,9 +51,11 @@
         canvas.width = width;
         canvas.height = height;
 
-        const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+=-`~?/\\';
+        const scriptureText = "ふたりはひとりよりもまさっている。三つよりの綱は、たやすくは切れない。わたしを強くしてくださる方によって、わたしは一切のことに耐えることができるのです。心をつくして主に信頼せよ。そうすれば、主はあなたの道をまっすぐにされる。すべて神の栄光のためにしなさい。互いにその賜物を用い合いなさい。患難は忍耐を生みだし、忍耐は練られた品性を生みだし、練られた品性は希望を生みだす。あなたがたの光を人々の前に輝かし、人々が良いおこないを見て、天にいます父をあがめるようにしなさい。";
+        const characters = Array.from(new Set(scriptureText)).join('');
+        
         const fontSize = 16;
-        const columns = width / fontSize;
+        let columns = Math.floor(width / fontSize);
         const drops = [];
 
         for (let x = 0; x < columns; x++) {
@@ -71,18 +65,16 @@
         function draw() {
             context.fillStyle = 'rgba(0, 0, 0, 0.05)';
             context.fillRect(0, 0, width, height);
-
-            context.fillStyle = '#0099ff'; // Blue color
             context.font = fontSize + 'px inter';
 
             for (let i = 0; i < drops.length; i++) {
                 const text = characters[Math.floor(Math.random() * characters.length)];
+                context.fillStyle = '#0099ff';
                 context.fillText(text, i * fontSize, drops[i] * fontSize);
 
                 if (drops[i] * fontSize > height && Math.random() > 0.975) {
                     drops[i] = 0;
                 }
-
                 drops[i]++;
             }
         }
@@ -92,12 +84,16 @@
             height = container.offsetHeight;
             canvas.width = width;
             canvas.height = height;
-            const columns = width / fontSize;
-            drops.length = columns;
-            for (let x = 0; x < columns; x++) {
-                if (drops[x] === undefined) {
+            
+            columns = Math.floor(width / fontSize);
+            if (Number.isFinite(columns) && columns >= 0) {
+                const oldDropsLength = drops.length;
+                drops.length = columns;
+                for (let x = oldDropsLength; x < columns; x++) {
                     drops[x] = 1;
                 }
+            } else {
+                drops.length = 0;
             }
         }
         
@@ -121,7 +117,7 @@
         <p class="text-base md:text-lg text-gray-400 max-w-sm mx-auto mb-6">
             The page you are looking for has been moved, removed, or is just a figment of your imagination.
         </p>
-
+        
         <!-- Home Button styled like the Discord button from your site -->
         <a href="/" class="
             inline-block
@@ -133,9 +129,24 @@
             hover:bg-blue-700
             transition-all duration-300
             transform hover:scale-105
+            mt-6
         ">
-            GO HOME
+            BACK TO INDEX
         </a>
     </div>
 </body>
 </html>
+
+
+
+<!-- Translation:
+ふたりはひとりよりもまさっている。三つよりの綱は、たやすくは切れない。わたしを強くしてくださる方によって、わたしは一切のことに耐えることができるのです。心をつくして主に信頼せよ。そうすれば、主はあなたの道をまっすぐにされる。すべて神の栄光のためにしなさい。互いにその賜物を用い合いなさい。患難は忍耐を生みだし、忍耐は練られた品性を生みだし、練られた品性は希望を生みだす。あなたがたの光を人々の前に輝かし、人々が良いおこないを見て、天にいます父をあがめるようにしなさい。
+
+Ecclesiastes 4:9-12 | Two are better than one, for a threefold cord is not quickly broken. 
+Philippians 4:13 | I can do all things through Him who strengthens me. 
+Proverbs 3:5-6 | Trust in the Lord with all your heart, and He will direct your paths. 
+1 Corinthians 10:31 | Do everything for the glory of God. 
+1 Peter 4:10 | Use your gifts to serve one another. 
+Romans 5:3-4 | Suffering produces endurance, endurance produces character, and character produces hope. 
+Matthew 5:16 | Let your light shine before others, so that they may see your good deeds and glorify your Father in heaven.
+
